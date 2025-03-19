@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>📢 Notification System</h2>
+  
+    <div class="input-container">
+      <input type="text" [(ngModel)]="newMessage" placeholder="Enter notification..." />
+      <button (click)="sendNotification()">Send</button>
+    </div>
+  
+    <h3>Recent Notifications</h3>
+    <ul>
+      <li *ngFor="let notification of notifications">{{ notification }}</li>
+    </ul>
+  </div>
+  
